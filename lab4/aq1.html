@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Content</title>
+</head>
+<body>
+    <div id="myElement">
+        <p id="myParagraph">Welcome to my website!</p>
+    </div>
+
+    <button onclick="changeContent()">Click to change text</button>
+
+    <script>
+        function changeContent() {
+            // Get the paragraph element by its ID
+            const paragraph = document.getElementById("myParagraph");
+
+            // Check if the element exists
+            if (paragraph) {
+                // Change its content
+                paragraph.innerHTML = "Hello there!";
+            } else {
+                console.log("Element not found");
+            }
+        }
+    </script>
+</body>
+</html>

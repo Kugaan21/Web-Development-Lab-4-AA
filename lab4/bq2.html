@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+</head>
+<body>
+    <h1>Book Details</h1>
+    <p><strong>Title of the first book:</strong> <span id="firstBookTitle"></span></p>
+    <p><strong>Author of the second book:</strong> <span id="secondBookAuthor"></span></p>
+    <p><strong>Genres of all books:</strong> <span id="allGenres"></span></p>
+
+    <script>
+     
+        const data = {
+            "Book": [
+                {
+                    "title": "The Great Gatsby",
+                    "author": "F. Scott Fitzgerald",
+                    "publication Year": 1925,
+                    "genres": ["Fiction", "Classics"]
+                },
+                {    
+                    "title": "To Kill a Mockingbird",
+                    "author": "Harper Lee",
+                    "publication Year": 1960,
+                    "genres": ["Fiction", "Coming-of-Age"]
+                }
+            ]
+        };
+
+        
+        console.log(data.Book[0].title);
+        console.log(data.Book[0].author);
+
+        // Loop through the students and display the subjects
+        data.Book.forEach(book => {
+            console.log(book.genres);
+        });
+    </script>
+</body>
+</html>
